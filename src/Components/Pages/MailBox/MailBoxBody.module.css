@@ -1,0 +1,55 @@
+.sideBar{
+    background-color: rgba(173, 216, 230, 0.334);
+    height: 600px;
+    width: 200px;
+    margin-top: -1%;
+
+}
+
+.sideBarContent{
+    margin-left: 8%;
+    margin-top: 1rem;
+}
+.ComposeBtn{
+    border: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    margin-top: 10%;
+    background-color: rgb(35, 141, 255);
+    height: 40px;
+    width: 85%;
+    color: white;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+.ComposeBtn:hover{
+    background-color: rgba(35, 141, 255, 0.768);
+}
+.inbox{
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+    height: 25px;
+    width: 85%;
+    font-weight: bold;
+    padding-left: 3%;
+    font-size: 14px;
+}
+.inbox:hover{
+    background-color: rgba(35, 141, 255, 0.525);
+    color: aliceblue;
+}
+
+.contentDiv{
+    background-color: rgb(245, 245, 245);
+    width: 70%;
+    margin-left: 20%;
+    margin-top: -38%;
+}
+.mailDivitems{
+    background-color: rgba(210, 230, 255, 0.437);
+    margin-left: 20%;
+    width: 70%;
+    margin-top: -38%;
+    height: 600px;
+}

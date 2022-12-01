@@ -4,6 +4,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import axios from 'axios';
 import classes from "./Compose.module.css";
 
+
 const Compose = () => {
     const emailIdRef = useRef();
     const SubjectRef = useRef();
@@ -20,6 +21,7 @@ const Compose = () => {
       console.log(Sendername);
       const data={
           sender:sender,
+          receiver:receiver,
           subject:SubjectRef.current.value,
           body:text,
       }
@@ -44,29 +46,29 @@ const Compose = () => {
 
   }
   return (
-    <div className="mainDivCompose">
-      <div className="subDivCompose">
-        <div className="toDiv">
+    <div className= {classes.mainDivCompose}>
+      <div className= {classes.subDivCompose}>
+        <div className={classes.toDiv}>
           <label> To</label>
           <input
             type="email"
             ref={emailIdRef}
-            className="inputemail"
+            className={classes.inputemail}
             placeholder="Email Address"
           />
         </div>
-        <div className="toDiv">
+        <div className={classes.toDiv}>
           <label> Subject</label>
           <input
             type="text"
             ref={SubjectRef}
-            className="inputSubject"
+            className={classes.inputSubject}
             placeholder="Email Subject"
           />
         </div>
         <div>
-          <div className="App">
-            <div className="editor">
+          <div className={classes.App}>
+            <div className={classes.editor}>
               <CKEditor
                 editor={ClassicEditor}
                 data={text}
@@ -78,8 +80,8 @@ const Compose = () => {
               />
             </div>
           </div>
-          <div className="submitDiv" >
-              <button className="submitBTN" onClick={submitHandler} >Send</button>
+          <div className={classes.submitDiv} >
+              <button className={classes.submitBTN} onClick={submitHandler} >Send</button>
           </div>
         </div>
       </div>

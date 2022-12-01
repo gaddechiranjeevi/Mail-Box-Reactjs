@@ -1,10 +1,9 @@
-
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Product Sans';
+  font-family: 'Product Sans', sans-serif;
 }
 
 body {

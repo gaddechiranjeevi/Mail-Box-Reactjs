@@ -29,7 +29,7 @@ const LoginPage = () =>{
             emailRef.current.value.includes(".com")) {
                 try{
                     const response =  await fetch(
-                        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBcp2QFFnFM8y6S7A_OTDQlJR65FQoNujA",
+                        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD6Fwyxzf7XIjETnQnlS6RzhLFubagwHP0",
                         {
                           method: "POST",
                           body: JSON.stringify({
@@ -74,7 +74,7 @@ const LoginPage = () =>{
 
         try{
             const response = await fetch(
-                "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBcp2QFFnFM8y6S7A_OTDQlJR65FQoNujA",
+                "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD6Fwyxzf7XIjETnQnlS6RzhLFubagwHP0",
                 {
                   method: "POST",
                   body: JSON.stringify({

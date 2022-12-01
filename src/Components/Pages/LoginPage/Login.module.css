@@ -1,8 +1,6 @@
 .backgroundDiv{
     background-image: url('../../Background/Background.jpg');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+    background-color: #f8abeb;
 
 }
 

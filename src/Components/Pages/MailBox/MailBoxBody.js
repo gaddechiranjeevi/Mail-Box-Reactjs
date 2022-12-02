@@ -103,6 +103,11 @@ useEffect(()=>{ loadInbox() },[])
         }
       useEffect(()=>{ counter() },[msg])
 
+      useEffect(()=>{
+        setTimeout(() => {
+            loadInbox()
+        }, 9000);
+      },[msg])
 
     return(
         <div>

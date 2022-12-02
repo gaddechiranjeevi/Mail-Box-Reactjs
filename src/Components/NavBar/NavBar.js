@@ -1,17 +1,21 @@
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import classes from "./NavBar.module.css";
+import { authActions } from "../Store/auth";
 
 const NavBar = () => {
     const history = useNavigate();
+    const dispatch = useDispatch();
 
     const LogOutHandler = (event) => {
         event.preventDefault();
         localStorage.setItem("JWTTOKEN", "");
         localStorage.setItem("userId", "");
         localStorage.setItem("Email", "");
+        dispatch(authActions.setAuth(false));
         history.replace('/auth');
     };
-    const isLogin = false;
+    const isLogin = useSelector(state=>state.auth.isAuth);
 
   return (
     <div className={classes.mainDivv}>

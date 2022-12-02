@@ -8,7 +8,6 @@ import classes from "./MailBox.module.css";
 const MailInbox=(props)=>{
     const dispatch = useDispatch();
     const isSentbox = useSelector(state=>state.isInbox.setBox)
-    console.log(props)
 
     const mailBoxHandler=async()=>{ 
         console.log(props)

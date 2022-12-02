@@ -24,6 +24,7 @@ const Compose = () => {
           receiver:receiver,
           subject:SubjectRef.current.value,
           body:text,
+          read:false,
       }
       try{
           const res = await axios.post(`https://mailbox-client-default-rtdb.firebaseio.com/${name}/receive.json`,data);

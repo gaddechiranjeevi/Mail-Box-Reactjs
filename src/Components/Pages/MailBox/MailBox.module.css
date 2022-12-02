@@ -9,3 +9,11 @@
 .gap{
     margin-left: 5rem;
 }
+.unread{
+    color: rgb(0, 106, 255);
+    font-size: 30px;
+}
+.read{
+    color: transparent;
+    font-size: 30px;
+}

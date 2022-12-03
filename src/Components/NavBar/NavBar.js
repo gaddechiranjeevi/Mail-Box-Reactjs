@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import classes from "./NavBar.module.css";
 import { authActions } from "../Store/auth";
 
 const NavBar = () => {
-    const history = useNavigate();
+    const history = useHistory();
     const dispatch = useDispatch();
 
     const LogOutHandler = (event) => {
